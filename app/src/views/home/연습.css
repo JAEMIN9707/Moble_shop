@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;;
+}
+header{
+    height: 220px;
+    border: solid 1px red; 
+  
+}
+#top{
+    height: 60px;
+    background-color: white;
+}
+.box{
+    /* border: solid 1px blue; */
+    
+}
+#top_logo img{
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#main_meun{
+    height: 80px;
+    /* border-top: solid 1px #e2e2e2;
+    border-bottom: solid 1px #e2e2e2; */
+
+}
+section{
+    height: 600px;
+    border: solid 1px red;
+}
+#box{
+    width: 1320px;
+    height: 300px;
+    /* border: solid 1px blue; */
+    margin: 0 auto;
+
+}
+
+footer{
+    height: 200px;
+    border: solid 1px yellow; 
+}
+
+#top_logo{
+    float: left;
+    border: solid 1px blueviolet;
+}
+
+#top_login{
+    float: right;
+    /* border: solid 1px black; */
+    margin-right: 13px;
+    margin-top: 24px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#logo{
+    border: solid 1px blue; 
+    height: 158px;
+    background-color: antiquewhite;
+    
+}
+.box_menu{
+    border: solid 2px purple;
+    height: 50px;
+    margin: 0 auto;
+}
+
+li{list-style: none;}
+ul{padding: 0; margin: 0;}
+
+.bar{
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.bar > li {
+    width: 20%; /*20*5=100%*/
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    background-color: black;
+    opacity: 0.7;
+}
+.bar a {
+    color: #fff;
+}
+.submenu > li {
+    line-height: 50px;
+    background-color: rgba(66, 63, 63, 0.658);
+}
+.submenu1 > li {
+    line-height: 50px;
+    background-color: rgba(66, 63, 63, 0.658);
+}
+.submenu {
+    height: 0; /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+}
+.submenu1 {
+height: 0; /*ul의 높이를 안보이게 처리*/
+overflow: hidden;
+}
+.bar > li:hover {
+background-color: rgba(66, 63, 63, 0.658);
+transition-duration: 0.5s;
+}
+.bar > li:hover .submenu {
+height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+transition-duration: 1s;
+}
+.bar > li:hover .submenu1 {
+height: 200px; /*서브메뉴 li한개의 높이 50*5*/
+transition-duration: 1s;
+}
+
+.info{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+.pr_box{
+    border: solid 1px purple; 
+    height: 300px;
+    margin: 0 auto; 
+}
+
+.pr_box img{
+    height: 300px;
+    margin-left: 60px;
+
+}
+
+
+

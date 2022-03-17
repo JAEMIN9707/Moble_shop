@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Jua', sans-serif;
+}
+body{
+    min-width: 1200px;
+}
+header{
+    height: 80px;
+    /* border: solid 1px red; */
+    color: white;
+    background-color:black;
+}
+#top{
+    height: 80px;
+    width: 180px;
+    /* border: solid 1px red; */
+    margin-left: 30px;
+    float: left;
+    margin-top: 25px;
+}
+
+#top h2{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#top img{
+    object-fit:contain ;
+    width: 100%;
+    height: 100%
+}
+
+#login{
+    height: 30px;
+    width: 123px;
+    /* border: solid 1px red; */
+    float: right;
+    margin:67px 20px 0 0;
+}
+#login a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    height:700px;
+    /* border:solid 1px blue; */
+    background-image:url(로고.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+#table{
+    height:50px;
+    background-color: black;
+    z-index: 999;
+}
+
+#menu{
+    height:50px;
+    width: 1200px;
+    margin: 0 auto;
+    /* border: solid 1px green; */
+   
+   
+}
+
+
+#menu li{
+    list-style: none;
+}
+  
+#menu ul{
+    padding: 0; margin: 0;
+}
+#menu a{
+    text-decoration: none;
+
+}
+
+.bar{
+    overflow: hidden;
+}
+  
+.bar > li {
+    width: 20%; /*20*5=100%*/
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    background-color:black;
+    opacity: 0.8;
+}
+
+.bar a {
+    color: #fff;
+}
+
+.submenu > li {
+    line-height: 50px;
+    background-color: black;
+}
+
+.submenu1 > li {
+    line-height: 50px;
+    background-color: black;
+}
+
+.submenu {
+    height: 0; /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+}
+
+.submenu1 {
+    height: 0; /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+}
+
+.bar > li:hover {
+    background-color: black;
+    transition-duration: 0.5s;
+}
+
+.bar > li:hover .submenu {
+    height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;
+}
+
+.bar > li:hover .submenu1 {
+    height: 200px; /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;
+}
+
+
+
+
+
+
+
+section{
+    height: 1100px;
+    /* border: solid 1px rgb(55, 126, 22); */
+}
+
+#box{
+    height: 1200px;
+    /* border: solid 1px rgb(44, 13, 155); */
+    margin: 0 auto;
+
+}
+
+#start{
+    height: 60px;
+    width: 500px;
+    margin: 0 auto;
+    /* border: solid 1px red; */
+    text-align: center;
+    font-size: 50px;
+    margin-top: 15px;
+}
+#item{
+    /* border: solid 1px red; */
+    height: 370px;
+}
+
+#item td img    {
+    width: 250px;
+    height: 260px;
+}
+
+table{
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+table td{
+    height: 30px;
+    width: 300px;
+}
+
+
+
+footer{
+    height: 300px;
+    
+   
+}
+
+
+#number{
+  
+    margin: 0 auto;   
+}
+
+.a{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.b{
+    font-size: 15px;
+    margin-left: 30px;
+}

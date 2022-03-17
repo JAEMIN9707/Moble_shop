@@ -5,8 +5,8 @@ const db = require("../config/db");
 class UserStorage {
     static getUserInfo(id) {
         return new Promise((resolve, reject) => {
-            const query = "SELECT * FROM users WHERE id = ?;";
-            db.query(query, [id],(err, data) => {
+            const query = "SELECT * FROM member WHERE id = ?;";
+            db.query(query, [id], (err, data) => {
                 if (err) reject(`${err}`);
                 resolve(data[0]);
             });
@@ -15,12 +15,12 @@ class UserStorage {
 
     static async save(userInfo) {
         return new Promise((resolve, reject) => {
-            const query = "insert into users(id, name, pwd) values(?,?,?);";
-            db.query(query, [userInfo.id, userInfo.name, userInfo.pwd],
+            const query = "insert into member(id, pwd, name, address, gender, phone) values(?,?,?,?,?,?);";
+            db.query(query, [userInfo.id, userInfo.pwd, userInfo.name, userInfo.address, userInfo.gender, userInfo.phone],
                 (err) => {
-                if (err) reject(`${err}`);
-                resolve({ success: true });
-            });
+                    if (err) reject(`${err}`);
+                    resolve({ success: true });
+                });
         });
     }
 }

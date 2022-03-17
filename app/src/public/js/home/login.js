@@ -1,4 +1,4 @@
-"user strict";
+"use strict";
 
 const id = document.querySelector("#id"),
 pwd = document.querySelector("#pwd"),
@@ -11,7 +11,7 @@ function login() {
         id: id.value,
         pwd: pwd.value,
     };
-    
+
     fetch("/login", {
         method: "POST",
         headers: {

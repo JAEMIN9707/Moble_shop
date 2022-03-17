@@ -1,0 +1,162 @@
+ * {
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  min-width: 992px;
+  font-family: "Helvetica";
+}
+
+.navbar{
+  height: 60px;
+  padding-left: 30px;
+}
+
+.logo{
+  line-height: 60px;
+  float: left;
+}
+
+.logo img{
+  vertical-align: middle;
+}
+
+.navbar ul{
+  float: right;
+}
+
+.navbar li{
+  list-style-type: none;
+  float: left;
+  margin-right: 30px;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: black;
+  font-style: bold;
+  font-size: 13px;
+}
+
+.hero_header{
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+body h1{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  font-size: 24px;
+  font-style: bold;
+  color: #545454;
+}
+
+.products {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 740px;
+  text-align: center;
+}
+
+.products img{
+  width: 225px;
+  height: 225px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.products a{
+  text-decoration: none;
+  color: black;
+  float: left;
+  font-size: 16px;
+}
+
+.price{
+  margin-top: 4px;
+  margin-bottom: 80px;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.footer{
+  text-align: center;
+}
+
+.footer img{
+  margin-top: 40px;
+  height: 20px;
+  margin-bottom: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#main_meun{
+  height: 50px;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+#main_meun li{
+  list-style: none;
+}
+
+#main_meun ul{
+  padding: 0; margin: 0;
+}
+
+#main_meun a{
+  text-decoration: none;
+}
+
+.bar{
+  overflow: hidden;
+}
+
+.bar > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  background-color:black;
+  opacity: 0.8;
+}
+.bar a {
+  color: #fff;
+}
+.submenu > li {
+  line-height: 50px;
+  background-color: black;
+}
+.submenu1 > li {
+  line-height: 50px;
+  background-color: black;
+}
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;
+}
+.submenu1 {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;
+}
+.bar > li:hover {
+  background-color: black;
+  transition-duration: 0.5s;
+}
+.bar > li:hover .submenu {
+  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;
+}
+.bar > li:hover .submenu1 {
+  height: 200px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;
+}

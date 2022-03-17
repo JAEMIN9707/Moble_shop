@@ -4,14 +4,13 @@ const User = require("../../models/User");
 
 const output = {
     home: (req, res) => {
-        res.render("home/index");
+        res.render("home/ex001");
     },
-    
     login: (req, res) => {
         res.render("home/login");
     },
     register: (req, res) => {
-        res.render("home/register");
+        res.render("home/member");
     },
 };
 
